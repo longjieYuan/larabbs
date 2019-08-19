@@ -6,11 +6,13 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
+        "barryvdh/laravel-snappy": "^0.4.4",
         "dingo/api": "^2.2",
         "doctrine/dbal": "^2.6",
         "fideloper/proxy": "~4.0",
         "gregwar/captcha": "^1.1",
         "guzzlehttp/guzzle": "~6.3",
+        "h4cc/wkhtmltopdf-amd64": "0.12.x",
         "hieu-le/active": "~3.5",
         "hirak/prestissimo": "^0.3.9",
         "intervention/image": "^2.4",
@@ -35,7 +37,8 @@
         "summerblue/administrator": "~1.1",
         "tymon/jwt-auth": "1.0.0-rc.3",
         "viacreative/sudo-su": "~1.1",
-        "vinkla/hashids": "5.1.0"
+        "vinkla/hashids": "5.1.0",
+        "watson/rememberable": "^3.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "~3.1",
