@@ -179,6 +179,7 @@ return [
 
         App\Providers\EasySmsServiceProvider::class,
         App\Providers\JpushServiceProvider::class,
+        Overtrue\LaravelFilesystem\Qiniu\QiniuStorageServiceProvider::class,
 
     ],
 
