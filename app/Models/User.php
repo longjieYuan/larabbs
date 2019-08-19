@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Traits\HashIdHelper;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -13,6 +14,7 @@ class User extends Authenticatable implements JWTSubject
     use Traits\LastActivedAtHelper;
     use Traits\ActiveUserHelper;
     use HasRoles;
+    use HashIdHelper;
     use Notifiable {
         notify as protected laravelNotify;
     }
