@@ -181,6 +181,7 @@ return [
         App\Providers\JpushServiceProvider::class,
         Overtrue\LaravelFilesystem\Qiniu\QiniuStorageServiceProvider::class,
         Chumper\Zipper\ZipperServiceProvider::class,
+        \App\Providers\ComposerServiceProvider::class,
 
     ],
 

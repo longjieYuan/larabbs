@@ -36,6 +36,7 @@
         "spatie/laravel-backup": "6.0.7",
         "spatie/laravel-permission": "~2.7",
         "summerblue/administrator": "~1.1",
+        "torann/geoip": "^1.0",
         "tymon/jwt-auth": "1.0.0-rc.3",
         "viacreative/sudo-su": "~1.1",
         "vinkla/hashids": "5.1.0",
