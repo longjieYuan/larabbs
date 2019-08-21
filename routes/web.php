@@ -29,3 +29,8 @@ Route::get('topics/{topic}/{slug?}', 'TopicsController@show')->name('topics.show
 Route::resource('replies', 'RepliesController', ['only' => ['store', 'destroy']]);
 Route::resource('notifications', 'NotificationsController', ['only' => ['index']]);
 Route::get('permission-denied', 'PagesController@permissionDenied')->name('permission-denied');
+
+// package chumper/zipper
+Route::get('zip', 'ZipController@index')->name('zip.index');
+Route::post('zip/download', 'ZipController@download')->name('zip.download');
+Route::post('zip/upload', 'ZipController@upload')->name('zip.upload');
