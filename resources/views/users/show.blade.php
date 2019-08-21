@@ -1,4 +1,13 @@
 
+@section('styles')
+    <style type="text/css">
+        .qrcode svg {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+@endsection
+
 @extends('layouts.app')
 
 @section('title', $user->name . ' 的个人中心')
@@ -25,6 +34,15 @@
                         <h4><strong>最后活跃</strong></h4>
                         <p title="{{  $user->last_actived_at }}">{{ $user->last_actived_at->diffForHumans() }}</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="media">
+                <div align="center">
+                    <img class="thumbnail img-responsive" src="data:image/png;base64, {!! base64_encode($qrcode) !!}">
                 </div>
             </div>
         </div>

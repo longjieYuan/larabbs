@@ -6,12 +6,18 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Http\Requests\UserRequest;
 use App\Handlers\ImageUploadHandler;
+use QrCode;
 
 class UsersController extends Controller
 {
     public function show(User $user)
     {
-        return view('users.show', compact('user'));
+        $qrcode = QrCode::format('png')
+            ->size(300)
+            ->margin(0)
+            ->merge(public_path().'/img/logo.png', 0.3, true)
+            ->generate(route('users.show',$user));
+        return view('users.show', compact('user','qrcode'));
     }
 
     public function edit(User $user)

@@ -182,6 +182,7 @@ return [
         Overtrue\LaravelFilesystem\Qiniu\QiniuStorageServiceProvider::class,
         Chumper\Zipper\ZipperServiceProvider::class,
         \App\Providers\ComposerServiceProvider::class,
+        SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class
 
     ],
 
@@ -232,6 +233,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Zipper' => Chumper\Zipper\Zipper::class,
+        'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
 
     ],
 
